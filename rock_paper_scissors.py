@@ -1,34 +1,25 @@
-"""
-@ Clever Programmer
-Rock paper scissors
-"""
 import random
 import simplegui
 
 
-# Global variables that all functions know about.
-# DO NOT EDIT THESE GLOBAL VARIABLES
-# OR YOUR GAME WILL BREAK.
 COMPUTER_SCORE = 0
 HUMAN_SCORE = 0
 human_choice = ""
 computer_choice = ""
 
+"""Convert choice to number."""
 
 def choice_to_number(choice):
-    """Convert choice to number."""
     return {'rock': 0, 'paper': 1, 'scissors': 2}
    
 
-
-def number_to_choice(number):
     """Convert number to choice."""
+def number_to_choice(number):
     return {0: 'rock', 1: 'paper', 2: 'scissors'}
 
 
-
-def random_computer_choice():
     """Choose randomly for computer."""
+def random_computer_choice():
     return random.choice(['rock', 'paper', 'scissors'])
 
 def choice_result(human_choice, computer_choice):
