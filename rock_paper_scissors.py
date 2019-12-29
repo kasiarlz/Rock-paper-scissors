@@ -1,7 +1,3 @@
-"""
-@ Clever Programmer
-Rock paper scissors
-"""
 import random
 import simplegui
 
